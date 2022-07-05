@@ -29,8 +29,9 @@ public class PowerPlantController {
     }
 
     @PostMapping("batteries")
-    public void createBatteryList(@RequestBody List<BatteryDetailsRequestDto> list){
+    public String createBatteryList(@RequestBody List<BatteryDetailsRequestDto> list){
         powerPlantService.createBatteryList(this.convertToEntity(list));
+        return "Success";
     }
 
     @PostMapping("postcode")

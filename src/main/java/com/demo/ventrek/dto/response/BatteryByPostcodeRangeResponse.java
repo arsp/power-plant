@@ -1,6 +1,5 @@
 package com.demo.ventrek.dto.response;
 
-import com.demo.ventrek.model.Battery;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Data;
